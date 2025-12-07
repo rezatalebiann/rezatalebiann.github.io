@@ -1,189 +1,170 @@
 <!DOCTYPE html>
-<html lang="fa" dir="rtl">
+<html lang="en" class="scroll-smooth">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>رزومه کاری - نام و نام خانوادگی</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>John Doe - Senior Software Engineer</title>
+  <meta name="description" content="John Doe - Senior Software Engineer specializing in Full-Stack & Cloud Technologies"/>
+  
+  <!-- Favicon (realistic monogram "JD") -->
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' fill='%231e293b'/><text x='50' y='68' font-family='Arial, sans-serif' font-size='56' font-weight='bold' text-anchor='middle' fill='%23e2e8f0'>JD</text></svg>" type="image/svg+xml">
 
-    <!-- فاویکون حرفه‌ای اضافه شد -->
-    <link rel="icon" href="https://cdn-icons-png.flaticon.com/512/10547/10547971.png" type="image/png">
-
-    <style>
-        @import url('https://fonts.googleapis.com/css2?family=Vazirmatn:wght@300;400;500;700&display=swap');
-
-        body {
-            font-family: 'Vazirmatn', sans-serif;
-            margin: 0;
-            padding: 0;
-            background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2);
-            color: #333;
-            line-height: 1.7;
+  <!-- Tailwind CSS via CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: {
+            sans: ['Inter', 'system-ui', 'sans-serif'],
+          }
         }
-        .container {
-            max-width: 900px;
-            margin: 40px auto;
-            background: white;
-            border-radius: 1px solid #e0e0e0;
-            border-radius: 16px;
-            box-shadow: 0 15px 40px rgba(0,0,0,0.1);
-            overflow: hidden;
-        }
-        header {
-            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-            color: white;
-            padding: 60px 40px;
-            text-align: center;
-        }
-        header h1 {
-            margin: 0;
-            font-size: 2.8rem;
-            font-weight: 700;
-        }
-        header p {
-            margin: 10px 0 0;
-            font-size: 1.3rem;
-            opacity: 0.9;
-        }
-        .contact-info {
-            margin-top: 20px;
-            font-size: 1.1rem;
-        }
-        .contact-info a {
-            color: white;
-            text-decoration: none;
-            margin: 0 12px;
-        }
-        .content {
-            padding: 40px;
-        }
-        section {
-            margin-bottom: 40px;
-        }
-        h2 {
-            color: #667eea;
-            border-bottom: 3px solid #667eea;
-            padding-bottom: 8px;
-            margin-bottom: 20px;
-            font-size: 1.8rem;
-        }
-        .job, .education {
-            margin-bottom: 25px;
-        }
-        .job h3, .education h3 {
-            margin: 0;
-            color: #333;
-            font-size: 1.4rem;
-        }
-        .job span, .education span {
-            font-size: 0.95rem;
-            color: #667eea;
-        }
-        .skills ul {
-            list-style: none;
-            padding: 0;
-            display: flex;
-            flex-wrap: wrap;
-            gap: 12px;
-        }
-        .skills li {
-            background: #667eea;
-            color: white;
-            padding: 8px 18px;
-            border-radius: 30px;
-            font-size: 0.95rem;
-        }
-        footer {
-            text-align: center;
-            padding: 20px;
-            background: #f8f9fa;
-            color: #666;
-            font-size: 0.9rem;
-        }
-        @media (max-width: 768px) {
-            header { padding: 50px 20px; }
-            header h1 { font-size: 2.2rem; }
-            header p { font-size: 1.1rem; }
-            .content { padding: 25px; }
-        }
-    </style>
+      }
+    }
+  </script>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet">
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
+  </style>
 </head>
-<body>
-    <div class="container">
-        <header>
-            <h1>نام و نام خانوادگی</h1>
-            <p>سمت شغلی فعلی شما – مثلاً توسعه‌دهنده فول‌استک</p>
-            <div class="contact-info">
-                <a href="tel:+989123456789">۰۹۱۲ ۳۴۵ ۶۷۸۹</a> |
-                <a href="mailto:your.email@gmail.com">your.email@gmail.com</a> |
-                <a href="https://linkedin.com/in/yourprofile" target="_blank">لینکدین</a> |
-                <a href="https://github.com/yourgithub" target="_blank">گیت‌هاب</a>
-            </div>
-        </header>
 
-        <div class="content">
-            <section class="about">
-                <h2>درباره من</h2>
-                <p>
-                    توسعه‌دهنده با بیش از ۵ سال تجربه در طراحی و توسعه وب‌سایت‌ها و اپلیکیشن‌های تحت وب. عاشق کار با فناوری‌های مدرن مثل React، Node.js، Laravel و Docker هستم. همیشه به دنبال چالش‌های جدید و یادگیری فناوری‌های روز هستم.
-                </p>
-            </section>
-
-            <section class="experience">
-                <h2>تجربه کاری</h2>
-                
-                <div class="job">
-                    <h3>توسعه‌دهنده ارشد فول‌استک</h3>
-                    <span>شرکت فناپ تلکام – تهران | مهر ۱۴۰۱ – تاکنون</span>
-                    <ul>
-                        <li>طراحی و توسعه پلتفرم مدیریت مشتریان با React و Node.js</li>
-                        <li>بهینه‌سازی عملکرد سرورها تا ۴۰٪ با استفاده از Redis و میکروسرویس‌ها</li>
-                        <li>رهبری تیم ۴ نفره توسعه‌دهندگان فرانت‌اند</li>
-                    </ul>
-                </div>
-
-                <div class="job">
-                    <h3>توسعه‌دهنده بک‌اند</h3>
-                    <span>استارتاپ دیجی‌نکست – تهران | اردیبهشت ۱۳۹۸ – شهریور ۱۴۰۱</span>
-                    <ul>
-                        <li>توسعه APIهای RESTful با Laravel و MySQL</li>
-                        <li>پیاده‌سازی سیستم پرداخت آنلاین و درگاه‌های بانکی</li>
-                        <li>نوشتن تست‌های واحد و یکپارچه‌سازی با بیش از ۹۰٪ پوشش</li>
-                    </ul>
-                </div>
-            </section>
-
-            <section class="education">
-                <h2>تحصیلات</h2>
-                <div class="education">
-                    <h3>کارشناسی ارشد مهندسی کامپیوتر – هوش مصنوعی</h3>
-                    <span>دانشگاه صنعتی شریف | ۱۳۹۸ – ۱۴۰۰</span>
-                </div>
-                <div class="education">
-                    <h3>کارشناسی مهندسی نرم‌افزار</h3>
-                    <span>دانشگاه تهران | ۱۳۹۴ – ۱۳۹۸</span>
-                </div>
-            </section>
-
-            <section class="skills">
-                <h2>مهارت‌ها</h2>
-                <ul>
-                    <li>JavaScript / TypeScript</li>
-                    <li>React / Next.js</li>
-                    <li>Node.js / Express</li>
-                    <li>PHP / Laravel</li>
-                    <li>PostgreSQL / MySQL</li>
-                    <li>Docker & Kubernetes</li>
-                    <li>Git & CI/CD</li>
-                    <li>Tailwind CSS</li>
-                    <li>RESTful API</li>
-                    <li>English (Fluent)</li>
-                </ul>
-            </section>
+<body class="bg-slate-50 text-slate-800 leading-relaxed">
+  <!-- Hero / Header -->
+  <header class="bg-gradient-to-br from-slate-900 to-slate-800 text-white">
+    <div class="container mx-auto px-6 py-20 md:py-32">
+      <div class="max-w-4xl mx-auto text-center">
+        <h1 class="text-5xl md:text-7xl font-bold mb-4">John Doe</h1>
+        <p class="text-xl md:text-2xl text-slate-300 mb-8">Senior Full-Stack Engineer & Cloud Architect</p>
+        <div class="flex flex-wrap justify-center gap-6 text-sm md:text-base">
+          <a href="mailto:john.doe@example.com" class="flex items-center gap-2 hover:text-cyan-300 transition">
+            <i class="fas fa-envelope"></i> john.doe@example.com
+          </a>
+          <a href="https://linkedin.com/in/johndoe" target="_blank" class="flex items-center gap-2 hover:text-cyan-300 transition">
+            <i class="fab fa-linkedin"></i> linkedin.com/in/johndoe
+          </a>
+          <a href="https://github.com/johndoe" target="_blank" class="flex items-center gap-2 hover:text-cyan-300 transition">
+            <i class="fab fa-github"></i> github.com/johndoe
+          </a>
+          <span class="flex items-center gap-2">
+            <i class="fas fa-map-marker-alt"></i> San Francisco, CA
+          </span>
         </div>
-
-        <footer>
-            آخرین بروزرسانی: آذر ۱۴۰۴ – ساخته شده با ❤️ و HTML/CSS خالص
-        </footer>
+      </div>
     </div>
+  </header>
+
+  <div class="container mx-auto px-6 py-12 max-w-5xl">
+    <div class="grid md:grid-cols-3 gap-10">
+
+      <!-- Left Column -->
+      <aside class="md:col-span-1 space-y-10">
+
+        <!-- About -->
+        <section>
+          <h2 class="text-2xl font-bold text-slate-900 mb-4 border-b-2 border-cyan-500 pb-2">About Me</h2>
+          <p class="text-slate-600">
+            Passionate full-stack engineer with 10+ years building scalable web applications and cloud-native systems. 
+            Love clean code, DevOps culture, and mentoring junior developers.
+          </p>
+        </section>
+
+        <!-- Skills -->
+        <section>
+          <h2 class="text-2xl font-bold text-slate-900 mb-4 border-b-2 border-cyan-500 pb-2">Skills</h2>
+          <div class="flex flex-wrap gap-2">
+            <span class="px-4 py-2 bg-cyan-100 text-cyan-800 rounded-full text-sm font-medium">JavaScript / TypeScript</span>
+            <span class="px-4 py-2 bg-cyan-100 text-cyan-800 rounded-full text-sm font-medium">React / Next.js</span>
+            <span class="px-4 py-2 bg-cyan-100 text-cyan-800 rounded-full text-sm font-medium">Node.js</span>
+            <span class="px-4 py-2 bg-cyan-100 text-cyan-800 rounded-full text-sm font-medium">Python</span>
+            <span class="px-4 py-2 bg-cyan-100 text-cyan-800 rounded-full text-sm font-medium">AWS / GCP</span>
+            <span class="px-4 py-2 bg-cyan-100 text-cyan-800 rounded-full text-sm font-medium">Docker / Kubernetes</span>
+            <span class="px-4 py-2 bg-cyan-100 text-cyan-800 rounded-full text-sm font-medium">PostgreSQL</span>
+            <span class="px-4 py-2 bg-cyan-100 text-cyan-800 rounded-full text-sm font-medium">GraphQL</span>
+          </div>
+        </section>
+
+        <!-- Languages -->
+        <section>
+          <h2 class="text-2xl font-bold text-slate-900 mb-4 border-b-2 border-cyan-500 pb-2">Languages</h2>
+          <ul class="space-y-2 text-slate-600">
+            <li><strong>English</strong> – Native</li>
+            <li><strong>Spanish</strong> – Professional Working</li>
+            <li><strong>French</strong> – Elementary</li>
+          </ul>
+        </section>
+      </aside>
+
+      <!-- Right Column -->
+      <main class="md:col-span-2 space-y-12">
+
+        <!-- Experience -->
+        <section>
+          <h2 class="text-3xl font-bold text-slate-900 mb-6 border-b-2 border-cyan-500 pb-2 inline-block">Experience</h2>
+          
+          <div class="space-y-8">
+            <div class="relative pl-8 border-l-4 border-cyan-500">
+              <div class="absolute -left-2 top-0 w-4 h-4 bg-cyan-500 rounded-full"></div>
+              <h3 class="text-xl font-semibold">Senior Software Engineer</h3>
+              <p class="text-cyan-600 font-medium">TechCorp • San Francisco, CA</p>
+              <p class="text-sm text-slate-500 mb-2">Jan 2021 – Present</p>
+              <ul class="list-disc list-inside text-slate-600 space-y-1 text-sm">
+                <li>Led migration of legacy monolith to microservices architecture (Node.js + Kubernetes) reducing latency by 65%</li>
+                <li>Designed and implemented real-time analytics platform processing 2M+ events/day</li>
+                <li>Mentored 6 junior developers and established code review best practices</li>
+              </ul>
+            </div>
+
+            <div class="relative pl-8 border-l-4 border-slate-300">
+              <div class="absolute -left-2 top-0 w-4 h-4 bg-slate-400 rounded-full"></div>
+              <h3 class="text-xl font-semibold">Full-Stack Developer</h3>
+              <p class="text-cyan-600 font-medium">StartupXYZ • Remote</p>
+              <p class="text-sm text-slate-500 mb-2">Jun 2018 – Dec 2020</p>
+              <ul class="list-disc list-inside text-slate-600 space-y-1 text-sm">
+                <li>Built MVP for SaaS product from scratch using React + NestJS + PostgreSQL</li>
+                <li>Implemented CI/CD pipelines with GitHub Actions and AWS</li>
+                <li>Achieved 99.9% uptime and scaled to 50k MAU in 18 months</li>
+              </ul>
+            </div>
+          </div>
+        </section>
+
+        <!-- Education -->
+        <section>
+          <h2 class="text-3xl font-bold text-slate-900 mb-6 border-b-2 border-cyan-500 pb-2 inline-block">Education</h2>
+          <div class="space-y-6">
+            <div>
+              <h3 class="text-xl font-semibold">B.Sc. Computer Science</h3>
+              <p class="text-cyan-600 font-medium">University of California, Berkeley</p>
+              <p class="text-sm text-slate-500">2014 – 2018 • GPA: 3.88/4.0</p>
+            </div>
+          </div>
+        </section>
+
+        <!-- Certifications (optional) -->
+        <section>
+          <h2 class="text-3xl font-bold text-slate-900 mb-6 border-b-2 border-cyan-500 pb-2 inline-block">Certifications</h2>
+          <ul class="grid grid-cols-1 md:grid-cols-2 gap-4">
+            <li class="flex items-center gap-3"><i class="fas fa-certificate text-cyan-500"></i> AWS Certified Solutions Architect – Professional</li>
+            <li class="flex items-center gap-3"><i class="fas fa-certificate text-cyan-500"></i> Google Cloud Professional Cloud Architect</li>
+            <li class="flex items-center gap-3"><i class="fas fa-certificate text-cyan-500"></i> Certified Kubernetes Administrator (CKA)</li>
+          </ul>
+        </section>
+      </main>
+    </div>
+
+    <!-- Download PDF Button -->
+    <div class="text-center mt-16">
+      <a href="John_Doe_Resume.pdf" download class="inline-flex items-center gap-3 bg-cyan-600 hover:bg-cyan-700 text-white font-semibold py-4 px-8 rounded-lg transition shadow-lg">
+        <i class="fas fa-download"></i> Download Resume as PDF
+      </a>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <footer class="bg-slate-900 text-slate-400 py-8 mt-20">
+    <div class="container mx-auto px-6 text-center">
+      <p>© 2025 John Doe. Made with ❤️ and a lot of coffee.</p>
+    </div>
+  </footer>
 </body>
 </html>
